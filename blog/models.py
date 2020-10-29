@@ -11,7 +11,7 @@ class Blog(models.Model):
 		return self.title
 
 	def summary(self):
-		return (self.body[:36] + '...')
+		return (self.body[:38] + '...')
 
 	def mod_date(self):
 		return self.pub_date.strftime('%b %e %Y')
